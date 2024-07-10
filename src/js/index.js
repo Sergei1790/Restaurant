@@ -6,7 +6,8 @@ if (process.env.NODE_ENV !== 'production') {
 }
 const content = document.getElementById('content');
 const buttons = document.querySelectorAll('.btns');
-buttons.forEach(button => button.addEventListener('click', changePage))
+buttons.forEach(button => button.addEventListener('click', changePage));
+content.textContent = '';
 homePageLoad();
 function changePage(event) {
     const buttonId = event.target.id;
