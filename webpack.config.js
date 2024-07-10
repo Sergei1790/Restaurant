@@ -2,12 +2,13 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/js/index.js',
+  // entry: './src/js/index.js',
   mode: 'development',
-  // entry: {
-  //   index: './src/index.js',
-  //   print: './src/print.js',
-  // },
+  entry: {
+    index: './src/js/index.js',
+    home: './src/js/home-page.js',
+    inner: './src/js/inner-pages.js',
+  },
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
