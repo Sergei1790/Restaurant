@@ -13,7 +13,6 @@ function changePage(event) {
     const buttonId = event.target.id;
     // content.innerHTML ='';
     content.textContent = '';
-    console.log(buttonId);
     switch (buttonId) {
         case 'homePageLoad':
             homePageLoad();
